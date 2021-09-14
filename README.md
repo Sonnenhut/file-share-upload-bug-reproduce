@@ -1,5 +1,6 @@
 ### Reproducting uploading to azure file-share
-This is a small program to reproduce uploading a rather big file (3gb) to a file-share.
+This is a small program to reproduce uploading a rather big file (3gb) to a file-share, resulting in a http 416 error.
+Reproducible for this bug: https://github.com/Azure/azure-sdk-for-java/issues/24118
 
 ```
 Exception in thread "main" com.azure.storage.file.share.models.ShareStorageException: Status code 416, "﻿<?xml version="1.0" encoding="utf-8"?><Error><Code>InvalidRange</Code><Message>The range specified is invalid for the current size of the resource.
